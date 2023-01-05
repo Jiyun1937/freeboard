@@ -128,6 +128,9 @@ export const reset = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  input {
+    padding: 0;
+  }
   input:focus {
     outline: none;
   }

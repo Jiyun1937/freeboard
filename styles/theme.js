@@ -1,11 +1,11 @@
 export const theme = {
   point: '#FFD600',
   gray: {
-    grade1: '#F2F2F2',
-    grade2: '#E0E0E0',
-    grade3: '#BDBDBD',
-    grade4: '#828282',
-    grade5: '#4F4F4F',
-    grade6: '#333333',
+    gradef2: '#F2F2F2',
+    gradee0: '#E0E0E0',
+    gradebd: '#BDBDBD',
+    grade82: '#828282',
+    grade4f: '#4F4F4F',
+    grade33: '#333333',
   },
 }

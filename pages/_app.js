@@ -1,13 +1,16 @@
 import { Global, ThemeProvider } from '@emotion/react'
 import { theme } from 'styles/theme'
 import { reset } from 'styles/global.style'
+import { Layout } from 'components'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
         <Global styles={reset} />
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   )
