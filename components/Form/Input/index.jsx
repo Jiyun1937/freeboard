@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styled from '@emotion/styled'
+import { TextField } from '@material-ui/core'
 
 const InputBox = styled.div`
   display: flex;
@@ -25,11 +26,17 @@ const InputBox = styled.div`
   }
 `
 
-export const Input = ({ label, type, placeholder, register }) => {
+export const Input = ({ label, type, placeholder, error, register }) => {
   return (
     <InputBox>
       <label>{label}</label>
-      <input type={type} {...register} placeholder={placeholder} />
+      <TextField
+        type={type}
+        {...register}
+        placeholder={placeholder}
+        error={error ? true : false}
+        helperText={error ? error : ''}
+      />
     </InputBox>
   )
 }
