@@ -17,7 +17,7 @@ const InputBox = styled.div`
     height: 50px;
     text-indent: 16px;
     border: 1px solid ${(props) => props.theme.gray.gradebd};
-
+    padding: 0;
     &::placeholder {
       font-size: 16px;
       font-weight: 400;
@@ -36,6 +36,7 @@ export const Input = ({ label, type, placeholder, error, register }) => {
         placeholder={placeholder}
         error={error ? true : false}
         helperText={error ? error : ''}
+        autoComplete='false'
       />
     </InputBox>
   )
